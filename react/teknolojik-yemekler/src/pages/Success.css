@@ -1,0 +1,124 @@
+.success {
+  background-color: #ce2829;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.success-brand {
+  font-family: "Londrina Solid", cursive;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.success-subtitle {
+  font-family: "Satisfy", cursive;
+  color: #fdc913;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.success-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
+
+.success-divider {
+  width: 200px;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 1.5rem 0;
+}
+
+.success-order {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.success-order h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.success-summary {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 1.5rem;
+  width: 260px;
+  border-radius: 8px;
+}
+
+.success-summary h4 {
+  margin-bottom: 1rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.summary-row.total {
+  font-weight: bold;
+}
+
+/* MOBİL */
+/* MOBİL */
+@media (max-width: 768px) {
+  .success {
+    /* 1. İçeriği ortalamayı bırak, en üsten başlat */
+    justify-content: flex-start !important;
+    
+    /* 2. En tepeden %15 kadar boşluk bırak (Bu değeri azaltırsanız daha yukarı çıkar) */
+    padding-top: 15vh !important; 
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Diğer elemanları gizle */
+  .success-subtitle,
+  .success-divider,
+  .success-order,
+  .success-summary {
+    display: none;
+  }
+
+  /* MARKA ADI AYARLARI */
+  .success-brand {
+    font-size: 3rem;
+    margin-top: 0;       /* Üstteki gizli boşlukları sil */
+    margin-bottom: 2rem; /* Alttaki mesajla arasındaki mesafe */
+    line-height: 1;
+  }
+
+  /* ANA BAŞLIK AYARLARI */
+  .success-title {
+    /* Orijinal metni ("SİPARİŞ ALINDI") nokta kadar küçültüp yok et */
+    font-size: 0px; 
+    margin: 0; /* Dış boşlukları sıfırla */
+    line-height: 0;
+  }
+
+  /* YENİ MESAJI EKLE */
+  .success-title::before {
+    padding: 12rem;
+    content: "TEBRİKLER!\A SİPARİŞİNİZ \A ALINDI!";
+    white-space: pre;       /* \A ile alt satıra geçebilsin */
+    display: block;         /* Blok olarak davran */
+    
+    font-size: 4rem;        /* Yazı boyutu (büyütmek isterseniz burayı artırın) */
+    line-height: 1.2;       /* Satır aralığı */
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif; /* Fontu koru */
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+}
