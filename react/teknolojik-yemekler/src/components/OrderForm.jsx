@@ -58,7 +58,7 @@ export default function OrderForm() {
     }
   };
 
-  // 🔥 ASIL ÖNEMLİ KISIM
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!isValid) return;
@@ -84,10 +84,8 @@ export default function OrderForm() {
         }
       );
 
-      // ✅ API response console'a basılır
       console.log("Sipariş Özeti (API Response):", response.data);
 
-      // ✅ POST başarılı → success sayfasına yönlendirme
       navigate("/success", {
         state: {
           pizzaName: "Position Absolute Acı Pizza",

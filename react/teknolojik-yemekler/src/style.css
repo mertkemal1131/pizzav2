@@ -85,7 +85,7 @@ button{border:0;background:none;cursor:pointer}
   border-radius:999px;
   font-weight:600;
   transition:.2s;
-  padding: 22px 70px;      /* ⬅️ daha büyük */
+  padding: 22px 70px;     
   font-size: 18px;
 }
 .hero-button:hover{
@@ -140,8 +140,8 @@ button{border:0;background:none;cursor:pointer}
 .large-card .card-title{
   display: flex;
   flex-direction: column;
-  font-size: 40px;   /* bigger */
-  font-weight: 400; /* less bold */
+  font-size: 40px;   
+  font-weight: 400; 
   line-height: 1.1;
 }
 .small-card{height:250px}

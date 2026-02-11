@@ -69,13 +69,10 @@
 }
 
 /* MOBİL */
-/* MOBİL */
 @media (max-width: 768px) {
   .success {
-    /* 1. İçeriği ortalamayı bırak, en üsten başlat */
     justify-content: flex-start !important;
     
-    /* 2. En tepeden %15 kadar boşluk bırak (Bu değeri azaltırsanız daha yukarı çıkar) */
     padding-top: 15vh !important; 
     
     padding-left: 1rem;
@@ -83,7 +80,6 @@
     padding-bottom: 2rem;
   }
 
-  /* Diğer elemanları gizle */
   .success-subtitle,
   .success-divider,
   .success-order,
@@ -91,19 +87,19 @@
     display: none;
   }
 
-  /* MARKA ADI AYARLARI */
+  
   .success-brand {
     font-size: 3rem;
-    margin-top: 0;       /* Üstteki gizli boşlukları sil */
-    margin-bottom: 2rem; /* Alttaki mesajla arasındaki mesafe */
+    margin-top: 0;       
+    margin-bottom: 2rem; 
     line-height: 1;
   }
 
   /* ANA BAŞLIK AYARLARI */
   .success-title {
-    /* Orijinal metni ("SİPARİŞ ALINDI") nokta kadar küçültüp yok et */
+  
     font-size: 0px; 
-    margin: 0; /* Dış boşlukları sıfırla */
+    margin: 0; 
     line-height: 0;
   }
 
@@ -111,13 +107,13 @@
   .success-title::before {
     padding: 12rem;
     content: "TEBRİKLER!\A SİPARİŞİNİZ \A ALINDI!";
-    white-space: pre;       /* \A ile alt satıra geçebilsin */
-    display: block;         /* Blok olarak davran */
+    white-space: pre;      
+    display: block;         
     
-    font-size: 4rem;        /* Yazı boyutu (büyütmek isterseniz burayı artırın) */
-    line-height: 1.2;       /* Satır aralığı */
+    font-size: 4rem;       
+    line-height: 1.2;      
     text-align: center;
-    font-family: "Roboto Condensed", sans-serif; /* Fontu koru */
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 200;
     letter-spacing: 1px;
   }

@@ -46,7 +46,6 @@ body {
 
 /* === ANA KONTEYNER === */
 .container {
-  max-width: 600px; /* Tasarımdaki dikey form yapısı için ideal */
   margin: -80px auto 50px auto;
   background: white;
   padding: 0 0 40px 0;
